@@ -1,0 +1,7 @@
+(amount of memory bits that you need to make beforehand)
+(amount of first inputs like from keyboard and mouse for example 8x, 32x, 64x  that you need to create beforehand)
+_______________________
+(below this line every new line is a gate)
+(the gates use the same naming conventions as you use to save the gate relations in the code)
+(example ExternalInput1 = I2NAND1) 
+(example 2 O1NAND1 = I1M672, I2NAND38)
