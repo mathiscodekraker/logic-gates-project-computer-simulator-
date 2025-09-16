@@ -31,7 +31,7 @@ def ReadOutputUnitTest():
     pass
 
 def UpdateMemoryBitUnitTest():
-    print("ReadOutput unit test for all possible ways you can create a memory bit: ")
+    print("UpdateMemoryBit unit test for all possible ways you can create a memory bit: ")
 
     TD.UpdateMemoryBitTestDataSet()
     AllUnitTestsWereSuccessful = True
