@@ -1,6 +1,7 @@
 #Library
 import BasicLogicGates as BLG
 import LogicGateCombinations as LGC
+import BinaryTranslator as BT
 
 #functions
 def GiveLengthList(Input1, Input2):
@@ -88,5 +89,30 @@ def XOR(Input1ForEachBit, Input2ForEachBit):
     return OutputsForEachBitList
 
 #logic gate combinations
+#Decoder
+def Decoder(InputList):
+    NOTInputList = []
+    for each in InputList:
+        NotInputList.append(BLG.NOT(each))
+        pass
 
+    AmountOfInputs = len(InputList)
+    AmountOfOutputs = 2 ** AmountOfInputs
+    index = 0
+    OutputList = []
+    while index < AmountOfOutputs:
+        #how outputs ordenen lowest binary int value to highest
+        BinaryValueOfIndex = BT.ConvertIntToBinary(index)
+        AndGateCombinationInputList = []
+        for indexBVOI, each in enumerate(BinaryValueOfIndex):
+            if each == 1:
+                AndGateCombinationInputList.append(InputList[indexBVOI])
+            elif each == 0:
+                AndGateCombinationInputList.append(NotInputList[indexBVOI])
+                pass
+            pass
+        
+        OutputList.append(LGC.ANDGateCombination(AndGateCombinationInputList))
+        pass
+    return OutputList
 
