@@ -116,3 +116,10 @@ def Decoder(InputList):
         pass
     return OutputList
 
+#Decoder simplified (without logic gates)
+def DecoderSimplified(InputList):
+    BinaryInputListConvertedToInt = BT.ConvertBinaryToInt(InputList)
+    AmountOfOutputs = 2 ** len(InputList)
+    OutputList = [0]*(BinaryInputListConvertedToInt-1) + 1 + [0]*(AmountOfOutputs - BinaryInputListConvertedToInt)
+    return OutputList
+
