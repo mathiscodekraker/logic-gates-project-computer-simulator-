@@ -104,39 +104,3 @@ def ConvertStringToBinary(StringValue):
         BinaryList.append(ConvertSymbolToBinary(EachSymbol))
         pass
     return BinaryList
-
-print(IntToSymbolValueDictionary)
-
-print(2, ConvertBinaryToInt("010"))
-print(4, ConvertBinaryToInt("0100"))
-print(5, ConvertBinaryToInt("0101"))
-print(8, ConvertIntToBinary(8))
-print(200, ConvertIntToBinary(200))
-print(0, ConvertIntToBinary(0))
-print(20, ConvertIntToBinary(20))
-print(2, ConvertIntToBinary(2))
-print(1, ConvertIntToBinary(1))
-print(3, ConvertIntToBinary(3))
-
-print(8, "4bits", ConvertIntToBinarySpecificSize(8, 4))
-print(200, "2bits", ConvertIntToBinarySpecificSize(200, 2))
-print(0, "8bits", ConvertIntToBinarySpecificSize(0, 8))
-print(20, "8bits", ConvertIntToBinarySpecificSize(20, 8))
-print(2, "7bits",ConvertIntToBinarySpecificSize(2, 7))
-print(1, "6bits", ConvertIntToBinarySpecificSize(1, 6))
-print(3, "5bits", ConvertIntToBinarySpecificSize(3, 5))
-
-print(ConvertStringToBinary("H!"))
-print(ConvertStringToBinary("HaSs!"))
-print(ConvertStringToBinary("3425"))
-
-print("0", ConvertBinaryToSymbol("0110000"))
-print("!", ConvertBinaryToSymbol("010 0001"))
-print("?", ConvertBinaryToSymbol("011 1111"))
-
-print("7", ConvertBinaryToSymbol("011 0111"))
-print("H", ConvertBinaryToSymbol("100 1000"))
-print("U", ConvertBinaryToSymbol("101 0101"))
-print("h", ConvertBinaryToSymbol("110 1000"))
-print("u", ConvertBinaryToSymbol("111 0101"))
-print("spatie." + ConvertBinaryToSymbol("010 0000") + ".")
